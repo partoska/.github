@@ -23,7 +23,7 @@ Small, dependency-light tools written in plain C. They run on macOS, Linux, and 
 
 | Project | Description | Platforms |
 | ------- | ----------- | --------- |
-| [**p6a**](https://github.com/partoska/p6a-cmd) | The Partoska command-line interface. Manage events, sync and upload photos, and get invite links and QR codes from your terminal. | macOS, Linux, Windows |
+| [**Partoska CLI**](https://github.com/partoska/p6a-cmd) (`p6a`) | The Partoska command-line interface. Manage events, sync and upload photos, and get invite links and QR codes from your terminal. | macOS, Linux, Windows |
 | [**Bikini**](https://github.com/partoska/bikini) (`bikini`, `libbikini`) | A minimal INI query tool and C99 library. Read, list, merge, and edit INI files from shell scripts without `sed` or `awk`. | macOS, Linux, Windows |
 | [**Cisivi**](https://github.com/partoska/cisivi) (`cisivi`, `libcisivi`) | A minimal CSV query tool and C99 library. Query, filter, sort, join, and edit CSV files from shell scripts and pipelines, quoted commas and line breaks included, with CSV, JSON, or aligned-table output. | macOS, Linux, Windows |
 | [**Daemon Pal**](https://github.com/partoska/dpal) (`dpal`) | A compact process supervisor. Start, stop, restart, and persist long-running processes from one small binary, with INI configuration, log rotation, and automatic restarts. | macOS, Linux |
