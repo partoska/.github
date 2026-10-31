@@ -23,9 +23,10 @@ Small, dependency-light tools written in plain C. They run on macOS, Linux, and 
 
 | Project | Description | Platforms |
 | ------- | ----------- | --------- |
-| [**Daemon Pal**](https://github.com/partoska/dpal) (`dpal`) | A compact process supervisor. Start, stop, restart, and persist long-running processes from one small binary, with INI configuration, log rotation, and automatic restarts. | macOS, Linux |
-| [**Bikini**](https://github.com/partoska/bikini) (`bikini`, `libbikini`) | A minimal INI query tool and C99 library. Read, list, merge, and edit INI files from shell scripts without `sed` or `awk`. | macOS, Linux, Windows |
 | [**p6a**](https://github.com/partoska/p6a-cmd) | The Partoska command-line interface. Manage events, sync and upload photos, and get invite links and QR codes from your terminal. | macOS, Linux, Windows |
+| [**Bikini**](https://github.com/partoska/bikini) (`bikini`, `libbikini`) | A minimal INI query tool and C99 library. Read, list, merge, and edit INI files from shell scripts without `sed` or `awk`. | macOS, Linux, Windows |
+| [**Cisivi**](https://github.com/partoska/cisivi) (`cisivi`, `libcisivi`) | A minimal CSV query tool and C99 library. Query, filter, sort, join, and edit CSV files from shell scripts and pipelines, quoted commas and line breaks included, with CSV, JSON, or aligned-table output. | macOS, Linux, Windows |
+| [**Daemon Pal**](https://github.com/partoska/dpal) (`dpal`) | A compact process supervisor. Start, stop, restart, and persist long-running processes from one small binary, with INI configuration, log rotation, and automatic restarts. | macOS, Linux |
 | [**Partoska Agent Skills**](https://github.com/partoska/p6a-skills) | Bring Partoska to your AI agent. A Claude Code and Codex plugin for managing event photos through the Partoska MCP server. | Any agent |
 
 ## Install
@@ -33,25 +34,28 @@ Small, dependency-light tools written in plain C. They run on macOS, Linux, and 
 **Homebrew** (macOS, Linux) — [`partoska/homebrew-tap`](https://github.com/partoska/homebrew-tap)
 
 ```bash
-brew install partoska/tap/dpal
-brew install partoska/tap/bikini
 brew install partoska/tap/p6a
+brew install partoska/tap/bikini
+brew install partoska/tap/cisivi
+brew install partoska/tap/dpal
 ```
 
 **Scoop** (Windows) — [`partoska/scoop-bucket`](https://github.com/partoska/scoop-bucket)
 
 ```powershell
 scoop bucket add partoska https://github.com/partoska/scoop-bucket
-scoop install partoska/bikini
 scoop install partoska/p6a
+scoop install partoska/bikini
+scoop install partoska/cisivi
 ```
 
 **npm** (macOS, Linux, Windows)
 
 ```bash
-npm install -g @partoska/dpal
-npm install -g @partoska/bikini
 npm install -g @partoska/p6a
+npm install -g @partoska/bikini
+npm install -g @partoska/cisivi
+npm install -g @partoska/dpal
 ```
 
 Every GitHub release also ships `.pkg`, `.deb`, `.rpm`, and Windows installers,
@@ -60,9 +64,10 @@ archives, bare binaries, and a `SHA256SUMS` file.
 **Agent skills** (Claude Code, Codex, Cursor, and others)
 
 ```bash
-npx skills add partoska/dpal
-npx skills add partoska/bikini
 npx skills add partoska/p6a-cmd@p6a -g
+npx skills add partoska/bikini
+npx skills add partoska/cisivi
+npx skills add partoska/dpal
 npx skills add partoska/p6a-skills
 ```
 
